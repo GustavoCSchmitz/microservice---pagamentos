@@ -19,18 +19,19 @@ Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviço
       `mvn spring-boot:run`
       
 ### API endpoint
-  - Pagamento
-     - [http://localhost:8082/pagamento]()
-     - Deve ser inserido um json, semelhante ao exemplo abaixo:
-     ```
-     {
-       "valor": 550.0,
-       "id": 1,
-       "carteira":{
-           "titular": "Gustavo"
-       }
-     }
-     ```
-      - Todos os campos são obrigatórios
+  - Método: POST
+     - Pagamento
+        - [http://localhost:8082/pagamento]()
+        - Deve ser inserido um json, semelhante ao exemplo abaixo:
+        ```
+        {
+          "valor": 550.0,
+          "id": 1,
+          "carteira":{
+              "titular": "Gustavo"
+          }
+        }
+        ```
+        - Todos os campos são obrigatórios
 
  
